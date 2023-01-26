@@ -11,7 +11,7 @@ plane1.addEventListener('animationend', () => {
   plane2.classList.add('get-back');
 });
 
-plane.addEventListener('mouseover', () => {
+plane1.addEventListener('mouseover', () => {
   plane1.classList.remove('get-back');
   plane2.classList.remove('get-back');
   plane1.classList.add('animated');
