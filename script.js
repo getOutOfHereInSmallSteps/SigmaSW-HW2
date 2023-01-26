@@ -2,11 +2,7 @@
 
 // Adding 'animationend' event trigger so the animation triggers on hover till the end
 
-const plane = document.querySelector('.plane');
-
 const [plane1, plane2] = document.querySelectorAll('.plane');
-
-console.log(plane1, plane2);
 
 plane1.addEventListener('animationend', () => {
   plane1.classList.remove('animated');
