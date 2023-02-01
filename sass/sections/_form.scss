@@ -1,0 +1,98 @@
+.subscribe {
+  background: rgba(223, 215, 249, 0.2);
+  border-radius: 129px 20px 20px 20px;
+  padding: 8rem 15.5rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 12.8rem;
+
+  &__heading {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 1.6;
+    text-align: center;
+    color: $main-dark-blue;
+
+    margin-bottom: 6.4rem;
+  }
+
+  &-spiral {
+    position: absolute;
+    opacity: 0.2;
+    z-index: -1;
+
+    &--1 {
+      right: 0;
+      top: 15%;
+    }
+
+    &--2 {
+      bottom: 0;
+      left: 2%;
+    }
+  }
+
+  &-arrow {
+    top: -5%;
+    right: -1%;
+    position: absolute;
+  }
+
+  &-dots {
+    position: absolute;
+    bottom: -15%;
+    right: -8%;
+  }
+}
+
+.subscribe__form {
+  width: 72%;
+  margin: 0 auto;
+  position: relative;
+
+  display: flex;
+  gap: 2.4rem;
+  &-input {
+    padding: 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    width: 100%;
+    background-color: $white-color;
+    align-items: center;
+    gap: 1rem;
+
+    display: flex;
+    align-items: center;
+
+    &--email {
+      font-size: 2rem;
+
+      &:active,
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+
+    &--submit {
+      background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+      border-radius: 10px;
+      font-family: 'Open Sans', sans-serif;
+      padding: 2.2rem 5rem;
+      color: $white-color;
+      font-size: 1.7rem;
+      font-weight: 600;
+      line-height: 1.2;
+
+      &:hover {
+        background: linear-gradient(180deg, #ff9f7c 0%, #ff8a77 100%);
+        cursor: pointer;
+        transition: all 0.3s;
+        transform: scale(1.05);
+      }
+    }
+  }
+}

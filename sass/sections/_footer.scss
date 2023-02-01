@@ -1,0 +1,123 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+
+  &-blur {
+    right: -22%;
+    bottom: -90%;
+  }
+}
+
+.footer__links__desc-company-name {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.4rem;
+  line-height: 1;
+  color: #181e4b;
+  margin-bottom: 3.2rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 8.6rem;
+
+  &__desc {
+    &-company-name {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 4.4rem;
+      line-height: 1;
+      color: #181e4b;
+      margin-bottom: 3.2rem;
+    }
+
+    &-paragraph {
+      @include paragraph;
+      font-size: 1.3rem;
+      line-height: 1.2;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    min-width: 47rem;
+    flex-shrink: 0;
+    &-col {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2;
+    color: #080809;
+  }
+}
+
+.footer-link {
+  &:link,
+  &:visited {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #5e6282;
+  }
+
+  &:hover,
+  &:active {
+    transform: scale(1.05);
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+
+  &-img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.social__header {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 0.005rem;
+  color: #5e6282;
+
+  margin-bottom: 1.2rem;
+}
+
+.social__mobile {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-img--mobile {
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.copyright__paragraph {
+  @include paragraph;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin-bottom: 8rem;
+}

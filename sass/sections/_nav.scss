@@ -1,0 +1,25 @@
+.top-nav {
+  padding-top: 4.2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+
+  &__links--main {
+    display: flex;
+    gap: 6rem;
+    margin-left: auto;
+    margin-right: 8.6rem;
+  }
+
+  &__links--authorize {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+}
+
+.menu-burger {
+  display: none;
+}

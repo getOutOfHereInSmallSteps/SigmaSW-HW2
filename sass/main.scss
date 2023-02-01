@@ -1,0 +1,21 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './base/animations';
+@import './base/base';
+@import './base/typography';
+
+@import './components/blur';
+@import './components/general';
+@import './components/link';
+
+@import './sections/booking';
+@import './sections/footer';
+@import './sections/form';
+@import './sections/hero';
+@import './sections/logos';
+@import './sections/nav';
+@import './sections/services';
+@import './sections/testimonials';
+@import './sections/top-destinations';
+
+@import './queries/queries.scss';

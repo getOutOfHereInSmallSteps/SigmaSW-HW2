@@ -1,0 +1,19 @@
+// PLANE ANIMATION ==============================
+
+@keyframes flyOut {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(600px, -350px);
+  }
+}
+
+@keyframes returnBack {
+  0% {
+    transform: translate(-1000px, 750px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

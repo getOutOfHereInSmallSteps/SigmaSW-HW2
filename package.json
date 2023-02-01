@@ -1,0 +1,11 @@
+{
+  "name": "jadoo",
+  "version": "1.0.0",
+  "description": "Jadoo landing page",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Alex Bihas",
+  "license": "ISC"
+}

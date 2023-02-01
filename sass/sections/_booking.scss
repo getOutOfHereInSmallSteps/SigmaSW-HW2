@@ -1,0 +1,218 @@
+.booking {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20rem;
+}
+
+.booking-steps {
+  max-width: 51rem;
+  &__heading {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 6.4rem;
+    text-transform: capitalize;
+    color: $booking-heading-color;
+
+    margin-bottom: 3.2rem;
+  }
+
+  &__subheading {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    text-transform: capitalize;
+    color: $main-dark-blue;
+    width: fit-content;
+  }
+}
+
+.steps-list {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  &__el {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 13px;
+      flex-shrink: 0;
+
+      &--1 {
+        background-color: $steps-list-color-1;
+      }
+
+      &--2 {
+        background-color: $steps-list-color-2;
+      }
+
+      &--3 {
+        background-color: $steps-list-color-3;
+      }
+    }
+
+    &__desc-header {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: $main-dark-blue;
+      margin-bottom: 0.4rem;
+      width: fit-content;
+    }
+
+    &__desc-paragraph {
+      @include paragraph;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+  }
+}
+
+.booking-card {
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+    0px 20px 13px rgba(0, 0, 0, 0.01),
+    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+
+  padding: 2rem 2.5rem;
+  border-radius: 26px;
+  position: relative;
+  background-color: $white-color;
+  margin-right: 12rem;
+
+  &-image {
+    margin-bottom: 2.6rem;
+  }
+
+  &-header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    letter-spacing: 0.015rem;
+    color: $black-color;
+    margin-bottom: 1.6rem;
+  }
+
+  &-date {
+    margin-bottom: 2rem;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1.8rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+    background-color: $main-cultured-color;
+  }
+
+  &__people {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__trip-blur {
+    position: absolute;
+    background: $trip-blur-color;
+    opacity: 0.4;
+    filter: blur(75px);
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    top: -10%;
+    right: -10%;
+    z-index: -1000;
+  }
+}
+
+.booking-trip {
+  position: absolute;
+  right: -30%;
+  top: 50%;
+  background-color: $white-color;
+  width: fit-content;
+  display: flex;
+  gap: 1.2rem;
+  padding: 2rem;
+  border-radius: 18px;
+
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+    0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+    0px 20px 13px rgba(0, 0, 0, 0.01),
+    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+    0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+
+  &-avatar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__description-subheading {
+    font-family: 'Poppins';
+    font-style: normal;
+
+    color: #84829a;
+
+    font-size: 1.4rem;
+    line-height: 1.2;
+    letter-spacing: -0.035rem;
+    font-weight: 500;
+  }
+
+  &__description-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1.4rem;
+  }
+
+  &__description-progress {
+    @include paragraph;
+    font-weight: 500;
+    color: $main-vampire-black-color;
+    margin-bottom: 0.1rem;
+
+    .progress {
+      color: $main-purple-color;
+    }
+  }
+
+  &__description-percentage {
+    height: 0.7rem;
+    background-color: $main-cultured-color;
+    width: 17rem;
+    border-radius: 30px;
+
+    .percentage {
+      width: 40%;
+      border-radius: 30px;
+      flex-grow: 0;
+      justify-self: start;
+      height: 100%;
+      background-color: $main-purple-color;
+    }
+  }
+}

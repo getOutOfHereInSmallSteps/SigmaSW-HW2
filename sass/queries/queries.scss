@@ -1,0 +1,293 @@
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .container {
+    max-width: 110rem;
+  }
+
+  .header {
+    touch-action: pan-y;
+  }
+
+  .heading-primary--sub {
+    font-size: 1.8rem;
+  }
+  .heading-primary--main {
+    font-size: 7rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    max-width: 100rem;
+  }
+
+  .plane {
+    transform: scale(0.8);
+  }
+}
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    padding: 0 5rem;
+  }
+
+  .container {
+    max-width: 100rem;
+  }
+
+  // .paragraph {
+  //   font-size: 2rem;
+  // }
+
+  .top-nav__links--main,
+  .top-nav__links--authorize {
+    display: none;
+  }
+
+  .menu-burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hero__images {
+    display: none;
+  }
+
+  .services-dots,
+  .subscribe-dots {
+    display: none;
+  }
+
+  .hero__decore {
+    display: none;
+  }
+
+  .cta__btn--1 {
+    &:link,
+    &:visited {
+      padding: 2.2rem 4rem;
+      font-size: 2rem;
+    }
+  }
+
+  .cta__btn--play {
+    transform: scale(1.05);
+  }
+
+  .destinations__decore {
+    display: none;
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .booking-steps {
+    max-width: fit-content;
+    width: auto;
+  }
+
+  .booking-card {
+    display: none;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial__comment {
+    max-width: 70rem;
+    width: auto;
+
+    &__user-avatar {
+      top: -20%;
+    }
+  }
+
+  .subscribe-arrow {
+    display: none;
+  }
+
+  .subscribe {
+    background: rgba(223, 215, 249, 0.5);
+    padding: 10rem 4rem;
+
+    &__form {
+      flex-direction: column;
+
+      &-input--email {
+        overflow: hidden;
+      }
+
+      &-input--submit {
+        padding: 3rem 6rem;
+        font-size: 2.4rem;
+      }
+    }
+
+    &-spiral {
+      display: none;
+    }
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 6.4rem;
+    height: auto;
+
+    &__desc-paragraph {
+      font-size: 2.5rem;
+    }
+
+    &__main {
+      width: auto;
+    }
+
+    &__header {
+      font-size: 3rem;
+    }
+
+    &__col-mobile {
+      max-width: 40rem;
+    }
+  }
+
+  .footer-link {
+    &:link,
+    &:visited {
+      font-size: 2.5rem;
+    }
+  }
+
+  .social {
+    &-img {
+      transform: scale(1.5);
+      margin-bottom: 4rem;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+
+      &--mobile {
+        transform: scale(1.5);
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+
+    &__header {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    &__mobile {
+      gap: 9.6rem;
+    }
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .categories {
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    &__card {
+      max-width: 40rem;
+    }
+  }
+
+  .destinations {
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  .destination {
+    max-width: 50rem;
+    min-width: 35rem;
+  }
+
+  .footer-blur {
+    display: none;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 36em) {
+  .header {
+    height: auto;
+  }
+
+  .hero {
+    padding-top: 9.6rem;
+  }
+
+  .hero__description__paragraph {
+    margin-bottom: 6.4rem;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: start;
+    justify-self: start;
+  }
+
+  .subscribe {
+    padding: 8rem 2rem;
+
+    &__heading {
+      font-size: 3rem;
+    }
+
+    &__form-input--submit {
+      padding: 2rem 1rem;
+    }
+  }
+
+  .social__mobile {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .social-img--mobile {
+    transform: none;
+    width: 80%;
+  }
+
+  .footer-links__main {
+    flex-direction: column;
+    gap: 3rem;
+    &__col {
+      gap: 3rem;
+    }
+  }
+}

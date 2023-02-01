@@ -1,0 +1,8 @@
+.blur {
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
+  background: $decore-blur-color;
+  opacity: 0.3;
+  filter: blur(75px);
+}
